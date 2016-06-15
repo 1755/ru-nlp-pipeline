@@ -4,6 +4,9 @@ from processors.Segmentator import Segmentator, InvalidConfigurationError
 
 class SegmentatorInitialization(unittest.TestCase):
     def test_initialization(self):
+        """
+        Run simple tests for segmentator initialization
+        """
         self.assertRaises(
             InvalidConfigurationError, Segmentator, None
         )
