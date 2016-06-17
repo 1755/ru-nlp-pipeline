@@ -1,13 +1,7 @@
 import inspect
 from .segmentator.BaseLineSegmentator import BaseLineSegmentator
 from .segmentator.ConcreteSegmentatorInterface import ConcreteSegmentatorInterface
-
-
-class InvalidConfigurationError(ValueError):
-    """
-    Exception wich raised on wrong segmentator configuration
-    """
-    pass
+from .Exceptions import InvalidConfigurationError
 
 
 class Segmentator(object):
