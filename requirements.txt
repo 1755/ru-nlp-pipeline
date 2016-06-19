@@ -1,3 +1,4 @@
-nltk==3.2.1
-six==1.10.0
-treetaggerwrapper==2.2.2
+nltk>=3.2.1
+six>=1.10.0
+treetaggerwrapper>=2.2.2
+networkx>=1.11
