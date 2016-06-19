@@ -1,5 +1,5 @@
 import inspect
-from .tokenizer.BaseLineTokenizer import BaseLineTokenizer
+from .tokenizer import DefaultTokenizer
 from .tokenizer.ConcreteTokenizerInterface import ConcreteTokenizerInterface
 from .Exceptions import InvalidConfigurationError
 
@@ -10,7 +10,7 @@ class Tokenizer(object):
     It's propper way to use it instead concreate tokenizator.
     """
 
-    def __init__(self, concrete_tokenizator_class=BaseLineTokenizer):
+    def __init__(self, concrete_tokenizator_class=DefaultTokenizer):
         """
         Initialize tokenizator
 

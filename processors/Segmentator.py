@@ -1,5 +1,5 @@
 import inspect
-from .segmentator.BaseLineSegmentator import BaseLineSegmentator
+from .segmentator import DefaultSegmentator
 from .segmentator.ConcreteSegmentatorInterface import ConcreteSegmentatorInterface
 from .Exceptions import InvalidConfigurationError
 
@@ -15,7 +15,7 @@ class Segmentator(object):
 
     """
 
-    def __init__(self, concrete_segmentator_class=BaseLineSegmentator):
+    def __init__(self, concrete_segmentator_class=DefaultSegmentator):
         """
         Initialize segmentator
 
